@@ -4,11 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bravellewear Store</title>
+	<title>Mersh Store</title>
 
 	<style>
 		:root {
-			--primary: #bfff00;
+			--primary: #ff0000;
 			--bg: #000000;
 			--card-bg: #111111;
 		}
@@ -47,35 +47,29 @@
 		.vinted-link {
 			position: absolute;
 			top: 50px;
-			left: 200px;
-			font-size: 1.4rem;
+			left: 50%; /* A képernyő közepére teszi a bal szélét */
+			transform: translateX(-50%); /* Visszatolja a saját szélessége felével, így lesz pontos */
+				
+			font-size: 2rem;
 			font-weight: 900;
 			letter-spacing: 2px;
 			text-transform: uppercase;
 			color: #777;
 			text-decoration: none;
-			text-shadow: 0 0 10px rgba(255,255,255,0.08);
+			text-shadow: 0 0 10px rgba(255, 0, 0, 0.08);
 			transition: 0.25s;
 			z-index: 100;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+
 
 		.vinted-link:hover {
-			color: #aaa;
-			text-shadow: 0 0 15px rgba(255,255,255,0.15);
+			color: #ff0000;
+			text-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
 		}
 
-		.corner-image {
-			position: absolute;
-			top: 50px;
-			left: 50px;
-			z-index: 100;
-		}
-
-		.corner-image img {
-			width: 125px;
-			height: auto;
-			border-radius: 10px;
-		}
 
 		/* PRODUCT GRID */
 
@@ -202,11 +196,6 @@
 	<a href="https://www.vinted.com/member/177769180" class="vinted-link">
 		OUR VINTED
 	</a>
-
-	<div class="corner-image">
-		<img src="https://cdn.discordapp.com/attachments/1482071878414635100/1482462317890371866/IMG_4669.jpg?ex=69b70a1f&is=69b5b89f&hm=876e8c1c51fc49edbc1fcd67fe4cc4e57e392de347efaea6d96707e1612a1295&" alt="Logo">
-	</div>
-
 
 	<div class="product-grid">
         
